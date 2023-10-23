@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { StatsComponent } from './stats/stats.component';
+import { SearchComponent } from './search/search.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { StatsComponent } from './stats/stats.component';
     SidebarComponent,
     HeaderComponent,
     ContentComponent,
-    StatsComponent
+    StatsComponent,
+    SearchComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,89 @@
+@import '../../styles.sass'
+
+.tasks-container
+  width: 402px
+  height: 231px
+  background-color: #DFECF4
+
+.task-header
+  display: flex
+  justify-content: space-between
+  padding: 10px 0px
+
+.task-button
+  width: 144px
+  height: 40px
+  padding: 10px
+  border-radius: 15px
+  border: none
+  background-color: #3D83DF
+  color: white
+  font-size: $medium_font
+  margin-left: 35px
+  font-family: $font_nunito
+
+.add-task
+  background-color: $brand_color
+  color: white
+  font-size: 22px
+  width: 38px
+  height: 40px
+  border-radius: 10px
+  border: none
+
+.task-subcontainer
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 232px
+  height: 39px
+  border-radius: 25px
+  margin-top: 5px
+
+.tasks-list
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+  font-family: $font_nunito
+
+.date-container
+  font-size: 13.5px
+  gap: 5px
+  font-family: $font_nunito
+
+.date
+  color: #6F6161
+  font-weight: bold
+
+.time
+  color: #698196
+  margin-left: 5px
+
+input[type="checkbox"]
+  display: none
+
+label.switch
+  width: 50px
+  height: 25px
+  background-color: rgba(31, 52, 71, 0.2) 
+  display: block
+  border-radius: 25px
+  position: relative
+  cursor: pointer
+
+  &::before
+    content: ""
+    width: 20px
+    height: 20px
+    background-color: #fff
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 3px
+    transition: 0.3s
+
+  input[type="checkbox"]:checked + &::before
+    left: 27px
+    border-radius: 25px
