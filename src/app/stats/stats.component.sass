@@ -1,0 +1,42 @@
+@import '../../styles.sass'
+
+
+.stats-container
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 100px
+    width:100px
+    margin-top: 50px
+
+
+.stats-card
+    display: flex
+    width: 139px
+    height: 78px
+
+.stats-group
+    display:flex
+    font-size: 14px
+    width: 60px
+
+    & i.material-icons
+        font-size:40px
+        color: $main_color
+        
+.stats-number
+  font-size: 22px
+  font-family: $font_poppins
+  font-weight: 600
+  width: 29px
+  height: 29px
+  background-color: $bg_first_color
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 10px
+
+.stats-name
+    font-family: $font-poppins
+    color: $secondary_text_color
+    font-size: $regular_font

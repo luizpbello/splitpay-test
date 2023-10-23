@@ -1,0 +1,9 @@
+<div class="stats-container">
+  <div class="stats-card" *ngFor="let statsItem of statsItems;">
+    <div class="stats-group" >
+      <i class="material-icons">{{statsItem.icon}}</i>
+      <span class="stats-name">{{statsItem.name}}</span>
+    </div>
+    <span class="stats-number">{{statsItem.number}}</span>
+  </div>
+</div>
