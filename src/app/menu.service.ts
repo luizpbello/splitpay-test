@@ -16,6 +16,6 @@ export class MenuService {
     { name: 'Pastas', icon: 'folder_copy', route: '/pastas' },
     { name: 'Configurações', icon: 'settings', route: '/configuracoes' },
     { name: 'Ajuda', icon: 'help', route: '/ajuda' },
-    { name: 'Sair', icon: 'exit_to_app', route: '/' },
+    { name: 'Sair', icon: 'exit_to_app', route: '/quit' },
   ];
 }

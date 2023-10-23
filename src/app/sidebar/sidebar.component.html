@@ -1,11 +1,12 @@
 <aside class="sidebar-container">
-    <img src="../../assets/Link.svg" alt="Ícone do Menu" class="menu-icon">
-    <ul class="menu">
-      <li class="menu-items" *ngFor="let menuItem of menuItems;  let last = last" [ngClass]="{'last-item': last}">
-        <a [routerLink]="menuItem.route">
-          <i class="material-icons">{{ menuItem.icon }}</i>
-          {{ menuItem.name }}
-        </a>
-      </li>
-    </ul>
+  <img src="../../assets/Link.svg" alt="Ícone do Menu" class="menu-icon">
+  <ul class="menu">
+    <li class="menu-items" *ngFor="let menuItem of menuItems; let last = last"
+        [ngClass]="{'last-item': last, 'selected-item': isRouteActive(menuItem.route)}">
+      <a [routerLink]="menuItem.route">
+        <i class="material-icons">{{ menuItem.icon }}</i>
+        {{ menuItem.name }}
+      </a>
+    </li>
+  </ul>
 </aside>
