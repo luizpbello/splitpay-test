@@ -11,6 +11,8 @@ import { StatsComponent } from './stats/stats.component';
 import { SearchComponent } from './search/search.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +23,13 @@ import { CalendarComponent } from './calendar/calendar.component';
     StatsComponent,
     SearchComponent,
     TasksComponent,
-    CalendarComponent
+    CalendarComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      
-    ])
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
