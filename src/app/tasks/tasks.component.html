@@ -3,15 +3,17 @@
     <button class="task-button">Tarefas</button>
     <button class="add-task">+</button>
   </div>
-  <div class="tasks-list" *ngFor="let taskItem of tasksItems">
-    <div class="task-subcontainer" [style.background-color]="taskItem.color">
-      <span class="task-name">{{ taskItem.task }}</span>
-      <input type="checkbox" name="" id="toggleSwitch" />
-      <label for="toggleSwitch" class="switch"></label>
-    </div>
-    <div class="date-container">
-      <span class="date">{{ taskItem.date }}</span>
-      <span class="time">{{ taskItem.time }}</span>
+  <div class="task-main">
+    <div class="tasks-list" *ngFor="let taskItem of tasksItems">
+      <div class="task-subcontainer" [style.background-color]="taskItem.color">
+        <span class="task-name">{{ taskItem.task }}</span>
+        <input type="checkbox" name="" id="toggleSwitch" />
+        <label for="toggleSwitch" class="switch"></label>
+      </div>
+      <div class="date-container">
+        <span class="date">{{ taskItem.date }}</span>
+        <span class="time">{{ taskItem.time }}</span>
+      </div>
     </div>
   </div>
 </div>

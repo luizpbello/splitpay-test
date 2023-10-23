@@ -15,7 +15,7 @@
   grid-template-columns: repeat(2, 1fr)
   grid-column-gap: 15px
 
-.filters
+select.filters
   position: relative
   width: 182px
   height: 45px
@@ -26,16 +26,10 @@
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-
-  &::after 
-    content: ""
-    position: absolute
-    top: 50%
-    right: 10px 
-    transform: translateY(-50%)
-    width:16px
-    height: 16px
-    z-index: 9999
+  background-image: url("../../assets/pseudo.svg")
+  background-repeat: no-repeat
+  background-position: right
+  
   
 .title
     font-family: $font_poppins

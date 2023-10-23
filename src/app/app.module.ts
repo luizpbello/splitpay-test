@@ -10,6 +10,7 @@ import { ContentComponent } from './content/content.component';
 import { StatsComponent } from './stats/stats.component';
 import { SearchComponent } from './search/search.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TasksComponent } from './tasks/tasks.component';
     ContentComponent,
     StatsComponent,
     SearchComponent,
-    TasksComponent
+    TasksComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
